@@ -1,0 +1,93 @@
+* Regolith Desktop configuration
+
+A light theme for Practicalli live broadcasts and screencasts.
+
+* Hacking the theme together
+
+- [X] Regolith configuration in =~/.config/regolith/i3/config=
+- [X] =.Xresources-regolith= as central theme file
+- [X] =.Xresources-color= solarized-light theme colors
+- [X] =.Xresources-theme= GTK theme & icon, desktop wallpaper, rofi theme
+- [X] =.Xresources-typeface= fonts & sizes, glyphs for regolith
+- [X] =.Xresources-st-term= Suckless terminal color and font configuration, using definitions in =.Xresources-color=
+- [X] =.Xresources-rofi.rasi= not sure what these change yet
+- [X] Move all configuration files to a project and create symbolic links
+- [ ] Create a Git repository and share on GitHub
+
+
+
+** Eshell log
+
+Welcome to the Emacs shell
+
+
+  ~   12:52   0
+ mkdir projects/linux/regolith-config
+
+  ~   12:52   1
+ mv .Xresources-regolith projects/linux/regolith-config/
+
+  ~   12:53   3
+ ln -s ~/projects/linux/regolith-config/
+
+  ~   12:54   3
+ cd projects/linux/regolith-config/
+
+  ~/projects/linux/regolith-config   12:55   5
+ ls -la
+total 1
+drwxrwxr-x   2 practicalli    practica  34 2020-02-18 12:53 .
+drwxrwxr-x   4 practicalli    practica  45 2020-02-18 12:52 ..
+-rw-rw-r--   1 practicalli    practica 951 2020-02-18 12:39 .Xresources-regolith
+
+  ~/projects/linux/regolith-config   12:55   6
+ mv .Xresources-regolith Xresources-regolith
+
+  ~/projects/linux/regolith-config   12:55   7
+ cd -
+
+  ~   12:55   8
+ ln -s ~/projects/linux/regolith-config/Xresources-regolith .Xresources-regolith
+
+  ~   12:56   9
+ mv .Xresources-regolith projects/linux/regolith-config/
+
+  ~   12:56   9
+ mv .Xresources-color projects/linux/regolith-config/Xresources-color
+
+  ~   12:57   10
+ ln -s ~/projects/linux/regolith-config/Xresources-color .Xresources-color
+
+  ~   12:58   11
+ mv .Xresources-theme projects/linux/regolith-config/Xresources-theme
+
+  ~   12:58   12
+ ln -s ~/projects/linux/regolith-config/Xresources-theme .Xresources-theme
+
+  ~   12:58   13
+ mv .Xresources-typeface projects/linux/regolith-config/Xresources-typeface
+
+  ~   12:59   14
+ ln -s ~/projects/linux/regolith-config/Xresources-typeface .Xresources-typeface
+
+  ~   12:59   15
+ mv .Xresources-st-term projects/linux/regolith-config/Xresources-st-term
+
+  ~   13:00   16
+ ln -s ~/projects/linux/regolith-config/Xresources-st-term .Xresources-st-term
+
+  ~   13:00   17
+ mv .Xresources-rofi.rasi projects/linux/regolith-config/Xresources-rofi.rasi
+
+  ~   13:06   18
+ ln -s ~/projects/linux/regolith-config/Xresources-rofi.rasi .Xresources-rofi.rasi
+
+
+  ~   13:14   23
+ mkdir -p ~/projects/linux/regolith-config/dot-config/regolith/i3/
+
+ ~/projects/linux/regolith-config   13:17   27
+ mv ~/.config/regolith/i3/config  ~/projects/linux/regolith-config/dot-config/regolith/i3/config
+
+  ~/projects/linux/regolith-config   13:17   28
+ ln -s  ~/projects/linux/regolith-config/dot-config/regolith/i3/config ~/.config/regolith/i3/config

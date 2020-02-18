@@ -1,0 +1,29 @@
+! #include "/etc/regolith/styles/practicalli/root"
+
+
+! -- Styles - Colors
+! #include "/etc/regolith/styles/practicalli/color"
+! #include "/etc/regolith/styles/ubuntu/color"
+!#include "/etc/regolith/styles/color-solarized-light"
+#include "/home/practicalli/.Xresources-color"
+
+! -- Styles - Fonts
+! #include "/etc/regolith/styles/ubuntu/typeface"
+! #include "/etc/regolith/styles/practicalli/typeface"
+#include "/home/practicalli/.Xresources-typeface"
+
+
+! -- Styles - Theme
+! #include "/etc/regolith/styles/ubuntu/theme"
+! #include "/etc/regolith/styles/practicalli/theme"
+#include "/home/practicalli/.Xresources-theme"
+
+
+! -- Applications
+! These files map values defined above into specific app settings.
+! #include "/etc/regolith/styles/st-term"
+#include "/home/practicalli/.Xresources-st-term"
+#include "/etc/regolith/styles/i3-wm"
+#include "/etc/regolith/styles/i3xrocks"
+#include "/etc/regolith/styles/rofi"
+#include "/etc/regolith/styles/gnome"

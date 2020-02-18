@@ -1,0 +1,4 @@
+#define gtk_theme           Solarized-Light
+#define icon_theme          Faba
+#define desktop_wallpaper   /usr/share/backgrounds/practicalli-desktop-redux.png
+#define rofi_theme          /home/practicalli/.Xresources-rofi.rasi
