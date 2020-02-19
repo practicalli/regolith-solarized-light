@@ -37,6 +37,7 @@ ln -s ~/projects/linux/regolith-config/Xresources-st-term .Xresources-st-term
 ln -s ~/projects/linux/regolith-config/Xresources-rofi.rasi .Xresources-rofi.rasi
 #+END_SRC
 
+  Apply the theme using =regolith-look refresh= or restart Regolith desktop.
 
 
 ** Hacking the theme together
