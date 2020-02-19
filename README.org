@@ -1,6 +1,6 @@
 * Regolith Desktop configuration
 
-A light theme for Practicalli live broadcasts and screencasts.
+A light theme for **Regolith version R1.3**, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
 
 The =.Xresource= files are used to define the theme for Regolith and its associated applications (eg. suckless terminal).
 
@@ -11,11 +11,13 @@ The =Xresource= files can be used with any Gnome theme you prefer.
 ** Requirements
    This theme hack requires the installation of the GTK theme called Solarized Light.
 
-   Download the [[https://www.gnome-look.org/p/1309911/][solarized light full desktop theme]] and extract into =~/.themes/=. If ubuntu-desktop installed, then you can use this [[https://www.gnome-look.org/p/1312496/][Solarized light theme]] instead
+   Download the [[https://www.gnome-look.org/p/1309911/][solarized light full desktop theme]] and extract into =~/.themes/=. If ubuntu-desktop is installed, then you can use the smaller [[https://www.gnome-look.org/p/1312496/][Solarized light theme]] instead
 
    The theme also uses the [[https://snwh.org/moka/download][Faba Icons]], although you can use any available icon pack.  Using =gnome-tweak= will show you the themes available (=sudo apt install gnome-tweak=)
 
    The theme also uses Ubuntu font family, although this can be changed in ==Xresources-typeface=.
+
+   Finally, it has a [[https://github.com/practicalli/graphic-design/blob/master/practicalli-desktop-redux.png][custom background]], so update the =Xresources-theme= configuration to use your own preferred background, eg. =/usr/share/backgrounds/regolith-structure-7.png= (on Ubuntu systems)
 
 ** Using this theme
    Clone the repository and create symbolic links to the relevant files.
