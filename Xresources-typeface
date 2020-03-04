@@ -19,6 +19,8 @@
 #define typeface_bar_glyph_battery_ac 
 #define typeface_bar_glyph_battery_unknown 
 #define typeface_bar_glyph_time 
+#define typeface_bar_glyph_workspace 
+! #define typeface_bar_glyph_workspace 
 ! #define typeface_bar_glyph_workspace 
 
 #define typeface_bar_glyph_media_playing 
@@ -47,8 +49,6 @@
 ! #define typeface_terminal   Ubuntu Mono:pixelsize=24:antialias=true:autohint=true
 
 ! Workspace glyph - original on line 22 of this file
-#define typeface_bar_glyph_workspace 
-
 ! Glyphs from default regolith theme
 
 ! #define typeface_bar_glyph_wifi 

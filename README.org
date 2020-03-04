@@ -1,12 +1,14 @@
 * Regolith Desktop configuration
 
-A light theme for **Regolith version R1.3**, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
+A light theme for *Regolith version R1.3.1*, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
 
 The =.Xresource= files are used to define the theme for Regolith and its associated applications (eg. suckless terminal).
 
 The GTK theme defines the Gnome desktop windows and Gnome specific apps (control panel, gnome tweaks, window decorations for all apps, etc.).
 
-The =Xresource= files can be used with any Gnome theme you prefer.
+The =Xresources= files can be used with any Gnome theme you prefer.
+
+*Note*: use [[https://github.com/practicalli/regolith-solarized-light/commit/ac78f9bb0dc8d101ad7d6b5d55963bc005602ac0][commit ac78f9b]] if using Regolith 1.3.0.  This theme does not work with Regolith 1.2.x or earlier.
 
 ** Requirements
    This theme hack requires the installation of the GTK theme called Solarized Light.
@@ -15,31 +17,32 @@ The =Xresource= files can be used with any Gnome theme you prefer.
 
    The theme also uses the [[https://snwh.org/moka/download][Faba Icons]], although you can use any available icon pack.  Using =gnome-tweak= will show you the themes available (=sudo apt install gnome-tweak=)
 
-   The theme also uses Ubuntu font family, although this can be changed in ==Xresources-typeface=.
+   The theme also uses Ubuntu font family, although this can be changed in =Xresources-typeface=.
 
    Finally, it has a [[https://github.com/practicalli/graphic-design/blob/master/practicalli-desktop-redux.png][custom background]], so update the =Xresources-theme= configuration to use your own preferred background, eg. =/usr/share/backgrounds/regolith-structure-7.png= (on Ubuntu systems)
 
 ** Using this theme
-   Clone the repository and create symbolic links to the relevant files.
+   Clone this theme to your computer, for example `~/project/linux/regolith-config`
 
 #+BEGIN_SRC shell
-ln -s  ~/projects/linux/regolith-config/dot-config/regolith/i3/config ~/.config/regolith/i3/config
-
-
-ln -s ~/projects/linux/regolith-config/Xresources-regolith .Xresources-regolith
-
-ln -s ~/projects/linux/regolith-config/Xresources-color .Xresources-color
-
-ln -s ~/projects/linux/regolith-config/Xresources-theme .Xresources-theme
-
-ln -s ~/projects/linux/regolith-config/Xresources-typeface .Xresources-typeface
-
-ln -s ~/projects/linux/regolith-config/Xresources-st-term .Xresources-st-term
-
-ln -s ~/projects/linux/regolith-config/Xresources-rofi.rasi .Xresources-rofi.rasi
+git clone https://github.com/practicalli/regolith-solarized-light.git ~/projects/linux/regolith-config
 #+END_SRC
 
-  Apply the theme using =regolith-look refresh= or restart Regolith desktop.
+   Edit the =Xresources-regolith= file and replace `/home/practicalli` with the location of your login account directory.
+
+   Create symbolic links for each file
+
+#+BEGIN_SRC shell
+  ln -s projects/linux/regolith-config/Xresources-regolith .Xresources-regolith
+  ln -s projects/linux/regolith-config/Xresources-color .Xresources-color
+  ln -s projects/linux/regolith-config/Xresources-theme .Xresources-theme
+  ln -s projects/linux/regolith-config/Xresources-typeface .Xresources-typeface
+  ln -s projects/linux/regolith-config/Xresources-st-term .Xresources-st-term
+
+  ln -s projects/linux/regolith-config/rofi.rasi-1.3.1 .Xresources-rofi.rasi
+#+END_SRC
+
+   Apply the theme using =regolith-look refresh= or restart Regolith desktop with =Super+Shift+b=.
 
 
 ** Hacking the theme together
@@ -52,80 +55,3 @@ ln -s ~/projects/linux/regolith-config/Xresources-rofi.rasi .Xresources-rofi.ras
  - [X] =.Xresources-rofi.rasi= not sure what these change yet
  - [X] Move all configuration files to a project and create symbolic links
  - [X] Create a Git repository and share on GitHub
-
-
-** Eshell log
-
-Welcome to the Emacs shell
-
-
-  ~   12:52   0
- mkdir projects/linux/regolith-config
-
-  ~   12:52   1
- mv .Xresources-regolith projects/linux/regolith-config/
-
-  ~   12:53   3
- ln -s ~/projects/linux/regolith-config/
-
-  ~   12:54   3
- cd projects/linux/regolith-config/
-
-  ~/projects/linux/regolith-config   12:55   5
- ls -la
-total 1
-drwxrwxr-x   2 practicalli    practica  34 2020-02-18 12:53 .
-drwxrwxr-x   4 practicalli    practica  45 2020-02-18 12:52 ..
--rw-rw-r--   1 practicalli    practica 951 2020-02-18 12:39 .Xresources-regolith
-
-  ~/projects/linux/regolith-config   12:55   6
- mv .Xresources-regolith Xresources-regolith
-
-  ~/projects/linux/regolith-config   12:55   7
- cd -
-
-  ~   12:55   8
- ln -s ~/projects/linux/regolith-config/Xresources-regolith .Xresources-regolith
-
-  ~   12:56   9
- mv .Xresources-regolith projects/linux/regolith-config/
-
-  ~   12:56   9
- mv .Xresources-color projects/linux/regolith-config/Xresources-color
-
-  ~   12:57   10
- ln -s ~/projects/linux/regolith-config/Xresources-color .Xresources-color
-
-  ~   12:58   11
- mv .Xresources-theme projects/linux/regolith-config/Xresources-theme
-
-  ~   12:58   12
- ln -s ~/projects/linux/regolith-config/Xresources-theme .Xresources-theme
-
-  ~   12:58   13
- mv .Xresources-typeface projects/linux/regolith-config/Xresources-typeface
-
-  ~   12:59   14
- ln -s ~/projects/linux/regolith-config/Xresources-typeface .Xresources-typeface
-
-  ~   12:59   15
- mv .Xresources-st-term projects/linux/regolith-config/Xresources-st-term
-
-  ~   13:00   16
- ln -s ~/projects/linux/regolith-config/Xresources-st-term .Xresources-st-term
-
-  ~   13:00   17
- mv .Xresources-rofi.rasi projects/linux/regolith-config/Xresources-rofi.rasi
-
-  ~   13:06   18
- ln -s ~/projects/linux/regolith-config/Xresources-rofi.rasi .Xresources-rofi.rasi
-
-
-  ~   13:14   23
- mkdir -p ~/projects/linux/regolith-config/dot-config/regolith/i3/
-
- ~/projects/linux/regolith-config   13:17   27
- mv ~/.config/regolith/i3/config  ~/projects/linux/regolith-config/dot-config/regolith/i3/config
-
-  ~/projects/linux/regolith-config   13:17   28
- ln -s  ~/projects/linux/regolith-config/dot-config/regolith/i3/config ~/.config/regolith/i3/config
