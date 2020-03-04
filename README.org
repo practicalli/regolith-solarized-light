@@ -10,6 +10,9 @@ The =Xresources= files can be used with any Gnome theme you prefer.
 
 *Note*: use [[https://github.com/practicalli/regolith-solarized-light/commit/ac78f9bb0dc8d101ad7d6b5d55963bc005602ac0][commit ac78f9b]] if using Regolith 1.3.0.  This theme does not work with Regolith 1.2.x or earlier.
 
+[[regoligh-desktop-practicalli-solarized-light-theme.png]]
+
+
 ** Requirements
    This theme hack requires the installation of the GTK theme called Solarized Light.
 
