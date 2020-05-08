@@ -2,6 +2,8 @@
 
 A light theme for *Regolith version R1.3.1*, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
 
+> This theme does not work with the latest Regolith version 1.4.x
+
 The =.Xresource= files are used to define the theme for Regolith and its associated applications (eg. suckless terminal).
 
 The GTK theme defines the Gnome desktop windows and Gnome specific apps (control panel, gnome tweaks, window decorations for all apps, etc.).
