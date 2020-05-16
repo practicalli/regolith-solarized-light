@@ -1,8 +1,6 @@
 * Regolith Desktop configuration
 
-A light theme for *Regolith version R1.3.1*, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
-
-> This theme does not work with the latest Regolith version 1.4.x
+A light theme for *Regolith version R1.4.x*, used with [[https://practicalli.github.io/][Practicalli live broadcasts and screencasts]].
 
 The =.Xresource= files are used to define the theme for Regolith and its associated applications (eg. suckless terminal).
 
@@ -10,7 +8,15 @@ The GTK theme defines the Gnome desktop windows and Gnome specific apps (control
 
 The =Xresources= files can be used with any Gnome theme you prefer.
 
-*Note*: use [[https://github.com/practicalli/regolith-solarized-light/commit/ac78f9bb0dc8d101ad7d6b5d55963bc005602ac0][commit ac78f9b]] if using Regolith 1.3.0.  This theme does not work with Regolith 1.2.x or earlier.
+The terminal used the [[https://github.com/romkatv/powerlevel10k][Powerlevel10k zsh theme]] and required the [[https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k][Meslo Nerd font]] installed.  To use the Ubuntu font, edit the Xresources-typeface file and use the Ubuntu Mono configuration (commented).
+
+
+## Previous Regolith releases
+The configuration has changes between recent versions of Reglolith.  Using the following commits should you have an earlier version of Regolith Linux.
+- [[https://github.com/practicalli/regolith-solarized-light/commit/730676f779a97dc58622fcc86d2b6e93e30563e8][commit 730676f]] for Regolith 1.3.1
+- [[https://github.com/practicalli/regolith-solarized-light/commit/ac78f9bb0dc8d101ad7d6b5d55963bc005602ac0][commit ac78f9b]] for Regolith 1.3.0
+
+  This theme does not work with Regolith 1.2.x or earlier.
 
 [[regoligh-desktop-practicalli-solarized-light-theme.png]]
 
@@ -23,6 +29,8 @@ The =Xresources= files can be used with any Gnome theme you prefer.
    The theme also uses the [[https://snwh.org/moka/download][Faba Icons]], although you can use any available icon pack.  Using =gnome-tweak= will show you the themes available (=sudo apt install gnome-tweak=)
 
    The theme also uses Ubuntu font family, although this can be changed in =Xresources-typeface=.
+
+   [[https://github.com/romkatv/powerlevel10k][Powerlevel10k zsh theme]] and required the [[https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k][Meslo Nerd font]] for the zsh theme.
 
    Finally, it has a [[https://github.com/practicalli/graphic-design/blob/master/practicalli-desktop-redux.png][custom background]], so update the =Xresources-theme= configuration to use your own preferred background, eg. =/usr/share/backgrounds/regolith-structure-7.png= (on Ubuntu systems)
 
