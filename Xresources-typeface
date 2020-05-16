@@ -1,8 +1,8 @@
 ! Typeface: Ubuntu
 #define typeface_bar_glyph  Ubuntu Mono 14
-#define typeface_wm         Ubuntu Medium 16
-#define typeface_bar        pango:FontAwesome 13
-#define typeface_rofi       Ubuntu Medium 16
+#define typeface_wm         pango:Ubuntu Medium 11
+#define typeface_bar        pango:FontAwesome 11
+#define typeface_rofi       Ubuntu Medium 24
 ! #define typeface_terminal   Ubuntu Mono:pixelsize=32:antialias=true:autohint=true
 #define typeface_terminal   MesloLGS NF:pixelsize=32
 
